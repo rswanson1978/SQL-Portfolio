@@ -1,0 +1,33 @@
+# Multi-Site AYA Oncology Reporting
+
+## Overview
+
+This project created a standardized adolescent and young adult oncology
+reporting model across two hospital systems.
+
+Although both hospitals required the same final Power BI measures, the
+underlying EHR workflows differed significantly. Separate PostgreSQL extraction
+pipelines were developed for each site, followed by harmonization into a common
+patient-level reporting model.
+
+## Hospital Workflow Differences
+
+### Hospital A
+
+- Cohort primarily identified through cancer registry and cancer-problem records
+- Separate workflow required for deceased patients
+- Referrals commonly identified through procedure orders
+- Additional concepts derived from notes and SmartData Elements
+
+### Hospital B
+
+- Cohort primarily identified through oncology departments and encounters
+- Registry diagnosis information supplemented encounter diagnoses
+- Oral and IV chemotherapy required separate extraction workflows
+- Radiation dates required parsing of multiple text formats
+- Referrals were captured across referral, order, provider, note, and SmartData workflows
+
+## Final Use
+
+The standardized outputs supported a combined Power BI report while preserving
+site-specific extraction logic.
