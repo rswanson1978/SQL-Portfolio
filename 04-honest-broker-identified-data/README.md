@@ -1,8 +1,8 @@
-# De-identified or Identified Research Self-Service Dataset
+# Identified Research Self-Service Dataset
 
 ## Overview
 
-This project demonstrates the development of a reusable de-identified or identified dataset for
+This project demonstrates the development of a reusable identified dataset for
 approved clinical research workflows. The dataset was designed to reduce
 repeated custom extraction work by providing researchers with governed access
 to commonly requested clinical concepts.
